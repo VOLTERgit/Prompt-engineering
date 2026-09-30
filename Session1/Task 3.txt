@@ -1,61 +1,242 @@
-Task 3 – Restaurant Review Prompt
+Introduction
+In this session, I learned about three important prompting techniques:
+1. Zero-Shot Prompting
+Zero-shot prompting means asking an AI to perform a task without giving it an example.
+Example:
+"Write a short description for a smartphone."
+
+The AI has to understand the task based only on the instructions.
+2. One-Shot Prompting
+One-shot prompting means giving the AI one example of the desired output and then asking it to perform a similar task.
+Example:
+Example:
+"The dosa was crispy, fresh and flavorful. The chutney was delicious and the service was quick."
+Now write a similar review for another dosa restaurant.
+
+The AI uses the provided example as a pattern.
+3. Few-Shot Prompting
+Few-shot prompting means providing multiple examples before asking the AI to perform a new task.
+For example, if I provide three product descriptions, the AI can understand the writing style, structure, length, and tone before creating a fourth description.
+Task 1 – Zero-Shot Prompting for the Latest IPL Match
 Objective
-This task demonstrates how adding more details to a prompt can change the quality of an AI-generated response.
-For this example, I will use a fictional café called "Bean & Bloom Café."
-Part A – Vague Prompt
-Prompt:
-"Write a review for a new cafe called Bean & Bloom Cafe."
+The purpose of this task is to use zero-shot prompting.
+In this example, I don't provide ChatGPT with any example of how the summary should be written. I simply tell it what I want.
+Exact Prompt Used
+"Give me a one-line summary of the latest completed IPL match. Mention the teams, the winner, and the result. Keep the answer to exactly one sentence."
 
-AI Output:
-Bean & Bloom Café Review
-Bean & Bloom Café is a nice new café with a pleasant atmosphere and a good selection of food and drinks. The café has a comfortable environment where people can relax, meet friends, or spend some time working.
-The food was tasty, and the drinks were enjoyable. The staff was friendly and the overall service was good.
-The café has a nice ambience and would be a good place to visit with friends or family. Overall, Bean & Bloom Café is worth visiting if you are looking for a comfortable place to enjoy some food and coffee.
-Part B – Detailed Prompt
-Prompt:
-"Write a natural and realistic customer review for a newly opened café called Bean & Bloom Café. The café serves Italian and continental food, including pasta, pizza, sandwiches, burgers, coffee, and desserts. The average price is ₹250–₹500 per person. The café has a modern minimalist interior with warm lighting, indoor plants, wooden furniture, and soft background music. It is suitable for students, couples, friends, and people working on laptops. Mention the quality of the food, taste of the coffee, ambience, cleanliness, staff behaviour, service speed, and value for money. Keep the review between 150 and 180 words. Make it sound like a genuine customer wrote it, not like an advertisement. End with a short overall recommendation."
+Example Response
+"Royal Challengers Bengaluru defeated Gujarat Titans by five wickets in the IPL 2026 final to win the title." IPL T20
 
-AI Output:
-Bean & Bloom Café Review
-I recently visited Bean & Bloom Café and had a really pleasant experience. The café has a modern and minimal interior with warm lighting, wooden furniture, indoor plants, and soft background music, which makes it feel comfortable without being too noisy.
-I tried their pasta and a coffee, and both were good. The pasta was fresh and had a nice balance of flavours, while the coffee was smooth and not overly sweet. Their menu also has pizzas, sandwiches, burgers, and desserts, so there are plenty of options to choose from.
-The staff was polite and helpful, and the café was clean and well-maintained. The service was reasonably quick even though there were several customers.
-Prices are around ₹250–₹500 per person, which I found reasonable for the quality and ambience. It also seems like a good place for students or anyone who wants to work on a laptop.
-Overall, Bean & Bloom Café is worth trying if you want good food, coffee, and a relaxed atmosphere.
-
-
-| Feature | Vague Prompt | Detailed Prompt |
-|---|---|---|
-| Café name | ✅ | ✅ |
-| Cuisine | ❌ | ✅ |
-| Price range | ❌ | ✅ |
-| Ambience | Very general | Detailed |
-| Food | General | Specific |
-| Coffee | Not detailed | Detailed |
-| Staff | General | Specific |
-| Service | General | Specific |
-| Cleanliness | ❌ | ✅ |
-| Target customers | ❌ | ✅ |
-| Length | Not specified | 150–180 words |
-| Writing style | General | Natural customer review |
-| Advertising tone | Possible | Specifically avoided |
-
-
-Which output is better?
-The second output is better for this particular task because the prompt gives the AI much more information.
-The first prompt only gives the café's name. Because there is very little context, the AI has to invent generic details.
-The second prompt gives information about:
-- Cuisine
-- Menu
-- Price
-- Interior
-- Target audience
-- Service
-- Food
-- Coffee
-- Cleanliness
+The official IPL report states that RCB defeated GT by five wickets in the 2026 final, chasing 156 and reaching 161/5 with 12 balls remaining. IPL T20
+Why Is This Zero-Shot Prompting?
+This is a zero-shot prompt because I did not provide any example to ChatGPT.
+I only provided:
+- The task
+- The information required
+- The length constraint
+ChatGPT had to understand the task without seeing a sample answer.
+What I Learned
+Zero-shot prompting is useful when the task is straightforward and the AI can understand the instructions without needing an example.
+It is especially useful for:
+- Simple summaries
+- Basic questions
+- Translations
+- General explanations
+- Simple content generation
+However, if I need a very specific writing style, one-shot or few-shot prompting can provide additional guidance.
+Task 2 – One-Shot Prompt for a Zomato Food Review
+Objective
+The objective is to understand one-shot prompting.
+In this task, I provide ChatGPT with one example of a Zomato-style food review. Then I ask it to write a similar review for a dosa restaurant in Ahmedabad.
+The example acts as a pattern for:
+- Tone
+- Length
 - Writing style
-- Word count
-As a result, the review feels more specific and realistic.
-Main Learning
-This shows that better input generally gives the AI a better-defined target. The quality and relevance of the response depend heavily on the information provided in the prompt.
+- Structure
+- Type of details
+One-Shot Prompt
+Write a short, natural Zomato-style food review. Follow the style, structure, and tone of this example:
+Example:
+"The biryani was flavorful and perfectly cooked. The portion size was good, and the chicken was tender. The restaurant had a clean and comfortable atmosphere, and the staff was friendly. Overall, a good place for a satisfying meal."
+Now write a similar review for a dosa restaurant in Ahmedabad. Mention the dosa, chutney, sambar, ambience, service, and overall experience. Keep the review natural and around 70–90 words. Do not copy sentences from the example.
+
+Example AI Output
+Dosa Restaurant Review
+"The masala dosa was crispy on the outside and nicely filled with flavorful potato masala. The coconut chutney was fresh, and the sambar had a good balance of spices. The restaurant had a simple and clean ambience, making it comfortable for a quick meal. The staff was polite and the service was reasonably fast. Overall, a good option in Ahmedabad for fresh South Indian food at a reasonable price."
+
+Why Is This One-Shot Prompting?
+It is called one-shot prompting because only one example is provided before asking the AI to perform the new task.
+The AI can identify the pattern from the example and use it for the new review.
+Pattern provided in the example:
+Food quality → Side dishes → Ambience → Staff → Overall opinion
+The generated response follows a similar structure:
+Dosa → Chutney & Sambar → Ambience → Staff → Overall experience
+Benefits of One-Shot Prompting
+One-shot prompting can help when:
+- A particular writing style is required.
+- The desired length needs to be demonstrated.
+- The user wants a specific structure.
+- The task is difficult to explain only with instructions.
+- A real example is easier to understand than a long explanation.
+Task 3 – Few-Shot Prompting for Flipkart Product Descriptions
+Objective
+The purpose of this task is to use few-shot prompting.
+Instead of giving just one example, I provide three examples showing how product descriptions should be written.
+The three examples represent different categories:
+1. Mobile
+2. Headphones
+3. Shoes
+After studying the examples, ChatGPT is asked to create a similar description for a smartwatch.
+Few-Shot Prompt
+"I want you to write short Flipkart-style product descriptions. Study the three examples below and identify their writing style, structure, tone, level of detail, and approximate length. Then write a new description for a smartwatch using the same style. Do not copy exact sentences from the examples.
+Example 1 – Mobile:
+"The smartphone features a vibrant display, smooth performance, and a long-lasting battery. Its sleek design makes it comfortable to hold, while the camera setup is suitable for everyday photos and videos."
+Example 2 – Headphones:
+"These wireless headphones offer clear audio, deep bass, and a comfortable fit for everyday listening. The lightweight design makes them easy to wear for longer periods, while the battery provides convenient usage throughout the day."
+Example 3 – Shoes:
+"These casual shoes combine a stylish design with everyday comfort. The lightweight construction makes walking easier, while the cushioned sole provides support during regular use. They are suitable for casual outings and daily wear."
+Now write a similar product description for a smartwatch. Keep the description concise, informative, and suitable for an e-commerce product listing. Mention display, battery, fitness tracking, design, and everyday usability."
+
+Example AI Output
+Smartwatch Product Description
+"This smartwatch features a bright display, reliable battery life, and useful fitness-tracking features for everyday activities. Its lightweight design makes it comfortable to wear throughout the day, while health and activity tracking help users monitor their daily routines. The watch is suitable for workouts, notifications, and regular everyday use."
+
+Analysis of the Few-Shot Examples
+The three examples have several common characteristics.
+1. Short and concise
+The descriptions are not extremely long.
+They provide important information without unnecessary details.
+2. Product-focused
+Each description talks about the main features and benefits of the product.
+3. Simple language
+The language is easy to understand.
+4. Professional tone
+The descriptions sound suitable for an online shopping website.
+5. Similar structure
+Most examples follow this pattern:
+Product → Main features → Benefits → Usage
+The smartwatch description follows the same general pattern.
+Why Few-Shot Prompting Is Useful
+Few-shot prompting gives the AI more information about the expected result than zero-shot prompting.
+For example, instead of simply saying:
+"Write a smartwatch description."
+
+I show ChatGPT three examples.
+This helps it understand:
+- Desired length
+- Tone
+- Sentence structure
+- Amount of detail
+- Type of information
+- Writing style
+Therefore, few-shot prompting is useful when consistency is important.
+Task 4 – Comparing Zero-Shot, One-Shot and Few-Shot Prompting
+Objective
+The final task is to compare the three prompting methods by asking ChatGPT to write a Spotify playlist description for a playlist called:
+"Monsoon Vibes"
+The same basic task is given three different ways.
+A. Zero-Shot Prompt
+Prompt:
+"Write a short Spotify playlist description for a playlist called 'Monsoon Vibes'. Keep it relaxing, emotional, and suitable for listening during rainy weather."
+
+Example Output:
+"A soothing collection of songs for rainy days, quiet evenings, and moments when you just want to relax and enjoy the monsoon vibes."
+
+Analysis
+The result is relevant, but it is fairly general.
+The AI understands:
+- Playlist name
+- Mood
+- Weather
+- Desired feeling
+However, no example is provided to show a particular writing style.
+B. One-Shot Prompt
+Prompt:
+"Write a Spotify playlist description similar in style to this example:
+Example:
+'Soft melodies, warm coffee, and quiet evenings — the perfect soundtrack for slowing down and enjoying the little moments.'
+Now write a similar description for a playlist called 'Monsoon Vibes'. Make it peaceful, emotional, and suitable for rainy evenings."
+
+Example Output:
+"Rainy skies, warm coffee, and soft melodies — the perfect playlist for watching the rain, getting lost in your thoughts, and enjoying peaceful monsoon evenings."
+
+Analysis
+The one-shot response follows the example's style more closely.
+The example provides a pattern:
+Rain/weather + everyday object + emotion + listening situation
+The AI then creates a similar structure for the monsoon playlist.
+C. Few-Shot Prompt
+Prompt:
+"Create a Spotify playlist description by following the style of these examples. Study the tone, sentence structure, imagery, and length. Then create a new description for 'Monsoon Vibes'.
+Example 1:
+'Soft melodies, warm coffee, and quiet evenings — the perfect soundtrack for slowing down and enjoying the little moments.'
+Example 2:
+'Late-night drives, city lights, and songs that make every moment feel a little more special.'
+Example 3:
+'Golden sunsets, peaceful roads, and mellow tunes — music made for escaping the noise and enjoying the journey.'
+Now write one description for 'Monsoon Vibes'. Keep the same poetic, short, emotional, and lifestyle-focused style. Do not copy any exact sentence."
+
+Example Output:
+"Rainy windows, warm chai, and soft melodies — a peaceful collection of songs for getting lost in your thoughts and enjoying every quiet monsoon moment."
+
+Comparison
+Method	Examples Provided	Example Result	Main Characteristic
+Zero-Shot	0	"A soothing collection of songs for rainy days..."	Follows direct instructions
+One-Shot	1	"Rainy skies, warm coffee, and soft melodies..."	Learns from one example
+Few-Shot	3	"Rainy windows, warm chai, and soft melodies..."	Learns a stronger pattern from multiple examples
+
+
+Which Method Gave the Most Relevant Result?
+For this particular task, few-shot prompting produced the most closely controlled result because the prompt provided three examples showing the desired tone, structure, imagery, and approximate length.
+The important point is not that few-shot prompting is always better. The best method depends on the task.
+Zero-Shot
+Works well when:
+- The task is simple.
+- The desired output is easy to explain.
+- No special style is required.
+One-Shot
+Works well when:
+- One example is enough to demonstrate the desired pattern.
+- A particular style or format is required.
+- The user wants the AI to imitate a structure without copying the content.
+Few-Shot
+Works well when:
+- The desired style is more complicated.
+- Consistency is important.
+- Multiple examples can show different aspects of the expected output.
+- The task needs stronger pattern recognition.
+Important Difference Between the Three Methods
+Zero-Shot
+Instruction only
+"Do this."
+
+One-Shot
+Instruction + one example
+"Do this like this example."
+
+Few-Shot
+Instruction + multiple examples
+"Study these examples and do the next one in the same pattern."
+
+What I Learned From Session 3
+This session helped me understand that examples can be used as part of a prompt to guide AI output.
+Zero-Shot Prompting
+I learned that zero-shot prompting does not provide examples. The AI must understand the task directly from the instructions.
+One-Shot Prompting
+I learned that one example can show the AI the expected writing style, structure, or format.
+Few-Shot Prompting
+I learned that multiple examples give the AI more information about the pattern that it should follow.
+Practical Example
+Suppose I want an AI to write product descriptions.
+Zero-Shot
+"Write a product description for a smartwatch."
+
+The AI decides the style itself.
+One-Shot
+"Write a smartwatch description like this example: [one example]."
+
+The AI gets one reference.
+Few-Shot
+"Here are three product descriptions. Study their style and write one for a smartwatch."
+
+The AI gets several references and can identify a more consistent pattern.
