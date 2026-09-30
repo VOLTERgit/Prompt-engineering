@@ -1,63 +1,394 @@
-Task 2 – Common Prompting Mistakes
+Introduction
+
+Session 2 focuses on structured prompting and output control. The goal is to learn how to tell an AI not only what information to provide, but also how that information should be organized and presented. A structured prompt can request a particular format such as bullet points, a comparison table, valid JSON, a strict word limit, or step-by-step headings.
+
+The five tasks below demonstrate these techniques using practical examples involving Spotify, Zomato and Swiggy, the IPL, UPI apps, and BookMyShow.
+
+Task 1 – Step-by-Step Spotify Playlist Creation
+
 Objective
-People often make mistakes while writing prompts because they assume that the AI already understands their intention.
-Below are three common mistakes and their Don't vs. Do examples.
-Mistake 1 – Being Too Vague
-❌ DON'T
-"Order some good food for me on Zomato."
 
-Problem:
-The AI does not know:
-- What type of food?
-- Vegetarian or non-vegetarian?
-- Budget?
-- How many people?
-- Location?
-- Spicy or non-spicy?
-- Any food preferences?
-The word "good" is also subjective.
-✅ DO
-"Suggest 5 highly rated vegetarian dinner options available on Zomato near my location. My budget is ₹300–₹500 for one person. I prefer Indian food, medium spice, and I want something suitable for dinner. Include the restaurant name, dish name, approximate price, and rating."
+The purpose of this task is to create a structured prompt that asks ChatGPT to explain a process in the correct order and present the response in bullet points. This is useful when a beginner needs clear instructions.
 
-Why this is better:
-The second prompt provides clear criteria, so the AI can give more relevant suggestions.
-Mistake 2 – Not Giving Enough Context
-❌ DON'T
-"Book a movie ticket for me on BookMyShow."
+Prompt Used
 
-Problem:
-The AI does not know:
-- Which movie?
-- Which cinema?
-- Which city?
-- Date?
-- Time?
-- Number of tickets?
-- Seat preference?
-✅ DO
-"Help me find a movie ticket on BookMyShow. I want to watch a Hindi movie in Ahmedabad this Saturday evening. There will be 2 people. Prefer a show between 6 PM and 9 PM, and choose standard or recliner seats if available. Show me the available options with movie name, theatre, show time, and ticket price."
+Act as a Spotify expert and explain how to create a new playlist on Spotify. Give me a simple step-by-step guide that a beginner can easily understand. Start from opening Spotify and end with saving the playlist successfully. Explain each major step in the correct order. Mention important options such as naming the playlist, adding a description, choosing a cover image if available, and adding songs. Present the entire answer using bullet points. Keep the instructions practical and easy to follow. Do not add unnecessary information.
 
-Why this is better:
-The AI now has the important context needed to understand the requirement.
-Mistake 3 – Not Specifying the Output Format
-❌ DON'T
-"Give me some movie recommendations."
+Example Output
 
-Problem:
-The response could be a long paragraph, a list, or just movie names.
-The user has not explained what information they need.
-✅ DO
-"Recommend 5 Hindi movies that I can watch this weekend. Present the answer in a table with these columns: Movie Name, Release Year, Genre, IMDb Rating, Main Actors, and a one-line description. Keep each description under 30 words."
+Open Spotify
 
-Why this is better:
-The AI knows exactly how the final answer should look.
-Summary of the Three Mistakes
+Open the Spotify application on your phone or computer.
 
-Mistake	                Don't  	                              Do
-Too vague	     | "Order good food."   |	Specify cuisine, budget, location, preferences
-Lack of context	 |"Book a movie ticket."|	Give city, date, time, people and seat preference
-No output format |	"Recommend movies."|	Specify table columns and response length
+Log in to your Spotify account.
+
+Go to Your Library
+
+Open Your Library from the Spotify menu.
+
+Look for the option to create a new playlist.
+
+Create a New Playlist
+
+Select Create Playlist or the corresponding option.
+
+A new playlist will be created.
+
+Name Your Playlist
+
+Enter a suitable name, such as My Workout Songs or Chill Evening Playlist.
+
+Add a Description
+
+Add a short description if you want.
+
+Use it to explain the purpose or theme of the playlist.
+
+Add Songs
+
+Select Add Songs.
+
+Search for songs, artists, albums, or podcasts.
+
+Select the songs you want to include.
+
+Arrange Your Playlist
+
+Review the songs.
+
+Reorder or remove songs if required.
+
+Customize the Playlist
+
+Add or change the playlist cover image if the option is available.
+
+Save and Use the Playlist
+
+Spotify saves playlist changes.
+
+You can now play, share, or continue adding songs.
+
+What This Task Demonstrates
+
+The phrase “step-by-step” controls the sequence of the response.
+
+The phrase “beginner can easily understand” controls the complexity of the language.
+
+The phrase “use bullet points” controls the visual structure.
+
+Specific required details reduce the chance of important steps being missed.
+
+Task 2 – Zomato vs Swiggy Comparison
+
+Objective
+
+The objective is to create a prompt that compares two services and forces the AI to organize the information in a side-by-side table. Tables are useful because the same features can be compared consistently.
+
+Prompt Used
+
+Compare Zomato and Swiggy as food-delivery platforms in India. Compare commonly available features and services, including restaurant discovery, food ordering, delivery tracking, offers and discounts, subscription or membership benefits, restaurant ratings and reviews, customer support, and payment options. Present the answer in a table with exactly these columns: Feature, Zomato, Swiggy. Keep the descriptions short and easy to understand. Do not declare an overall winner; simply explain the differences between the two platforms.
+
+Example Output
+
+Feature
+
+Zomato
+
+Swiggy
+
+Restaurant Discovery
+
+Search and discover restaurants using location, cuisine, ratings and filters.
+
+Search and discover restaurants using location, cuisine, ratings and filters.
+
+Food Ordering
+
+Browse menus, select food and place orders through the app.
+
+Browse menus, select food and place orders through the app.
+
+Delivery Tracking
+
+Shows order status and delivery tracking for eligible orders.
+
+Shows order status and delivery tracking for eligible orders.
+
+Offers & Discounts
+
+Offers vary by restaurant, order and user eligibility.
+
+Offers vary by restaurant, order and user eligibility.
+
+Membership
+
+Provides benefits through applicable subscription programs.
+
+Provides benefits through applicable subscription programs.
+
+Ratings & Reviews
+
+Users can view restaurant ratings and reviews.
+
+Users can view restaurant ratings and reviews.
+
+Customer Support
+
+In-app support is available for order-related issues.
+
+In-app support is available for order-related issues.
+
+Payment Options
+
+Supports multiple digital payment methods depending on availability.
+
+Supports multiple digital payment methods depending on availability.
+
+What This Task Demonstrates
+
+A prompt can specify the exact column names.
+
+A table keeps information consistent across both services.
+
+A prompt can request neutral comparison rather than an overall winner.
+
+Output instructions are part of prompt engineering, not just the topic itself.
+
+Task 3 – Five Most Recent IPL Winners in JSON
+
+Objective
+
+The objective is to learn how to request machine-readable output. JSON is commonly used by websites, applications, APIs and automation systems because information is organized into predictable keys and values.
+
+Prompt Used
+
+Give me the five most recent IPL winners, including the season year and winning team name. Use the latest completed IPL season available at the time of answering. Return the answer only as valid JSON. Use an array of objects, and each object must contain exactly two keys: "year" and "team". Do not include Markdown, explanations, comments, or any text outside the JSON.
+
+Example Output
+
+[
+  {
+    "year": 2026,
+    "team": "Royal Challengers Bengaluru"
+  },
+  {
+    "year": 2025,
+    "team": "Royal Challengers Bengaluru"
+  },
+  {
+    "year": 2024,
+    "team": "Kolkata Knight Riders"
+  },
+  {
+    "year": 2023,
+    "team": "Chennai Super Kings"
+  },
+  {
+    "year": 2022,
+    "team": "Gujarat Titans"
+  }
+]
+
+Data note: The official IPL website currently lists Royal Challengers Bengaluru as the 2026 winner and lists the recent winners for 2025 through 2022. The exact order and data should be re-verified whenever this prompt is used in the future because the latest completed season can change. Source: official IPL website, accessed for this assignment.
+
+Why JSON Is Useful
+
+JSON has a predictable structure that software can parse.
+
+Each object contains the same keys, making the data consistent.
+
+The prompt explicitly says not to add text outside the JSON, reducing formatting problems.
+
+This approach is useful for APIs, web applications, automation and data exchange.
+
+Task 4 – Benefits of UPI Apps
+
+Objective
+
+This task demonstrates how to control both the format and length of an AI response. The assignment requires exactly three short bullet points and a total response of no more than 30 words.
+
+Prompt Used
+
+Summarize the main benefits of using UPI payment apps such as PhonePe and Paytm. Return exactly three short bullet points. The entire answer must contain no more than 30 words in total. Focus on convenience, speed, and security. Do not include an introduction, conclusion, or any text outside the three bullet points.
+
+Example Output
+
+Fast: Make instant payments using your phone.
+
+Convenient: Pay bills and transfer money easily.
+
+Secure: UPI uses authentication for transactions.
+
+Word count: 18 words (within the 30-word limit).
+
+Constraints Used in the Prompt
+
+Constraint
+
+Instruction
+
+Number constraint
+
+Exactly three short bullet points.
+
+Word constraint
+
+No more than 30 words in total.
+
+Content constraint
+
+Focus on convenience, speed and security.
+
+Format constraint
+
+No introduction, conclusion or extra text.
+
+Task 5 – How to Book a Movie Ticket on BookMyShow
+
+Objective
+
+The objective is to create a prompt that generates a multi-step process using clear headings. This makes a long procedure easier to scan and follow.
+
+Prompt Used
+
+Explain how to book a movie ticket using BookMyShow for a beginner who has never used the platform before. Explain the process in the correct order, starting from opening BookMyShow and ending with receiving the booking confirmation. Use clear headings for every major step. Use headings exactly in this style: "Step 1: Search Movie", "Step 2: Select Location", etc. Under each heading, provide 2–4 simple bullet points explaining what the user needs to do. Include important steps such as selecting the movie, location, theatre, date, showtime, seats, applying offers if applicable, selecting a payment method, completing payment, and checking the booking confirmation. Keep the language simple and practical.
+
+Example Output
+
+Step 1: Open BookMyShow
+
+Open the BookMyShow website or mobile application.
+
+Log in to your account if required.
+
+Step 2: Select Your Location
+
+Select your city or allow the application to detect your location.
+
+Make sure the selected location is correct.
+
+Step 3: Search Movie
+
+Search for the movie you want to watch.
+
+Select the movie from the search results.
+
+Step 4: Select Date
+
+Choose the date on which you want to watch the movie.
+
+Check the available dates shown for the selected movie.
+
+Step 5: Select Theatre and Showtime
+
+Choose a theatre from the available options.
+
+Select a suitable showtime.
+
+Check the language and format if multiple options are available.
+
+Step 6: Select Seats
+
+Choose the seats you want from the available seating layout.
+
+Check the number of selected seats and total ticket price.
+
+Step 7: Apply Offers
+
+Check whether any eligible coupons or offers are available.
+
+Apply an offer if applicable.
+
+Step 8: Choose Payment Method
+
+Select an available payment method.
+
+Review the final amount before making the payment.
+
+Step 9: Complete Payment
+
+Complete the payment using the selected method.
+
+Wait for the payment confirmation.
+
+Step 10: Check Booking Confirmation
+
+Check the booking confirmation after successful payment.
+
+Save the ticket details or access them through the BookMyShow app/website.
+
+Verify theatre, movie, date, showtime and seat numbers.
+
+What This Task Demonstrates
+
+Headings can divide a long process into easy-to-follow sections.
+
+A prompt can control the exact heading style.
+
+The number of bullet points under each heading can also be specified.
+
+A process prompt is clearer when the start and end points are defined.
+
+Overall Learning From Session 2
+
+This session helped me understand that prompt engineering is not only about asking an AI a question. It is also about controlling how the answer is structured. Different output instructions are useful for different situations.
+
+Technique
+
+Use
+
+Bullet points
+
+Useful for instructions, lists, summaries and quick explanations.
+
+Tables
+
+Useful when comparing multiple products, services or features side by side.
+
+JSON
+
+Useful when information needs to be machine-readable for software, APIs or automation.
+
+Word limits
+
+Useful when a response must be short, such as social media content or concise summaries.
+
+Headings
+
+Useful for breaking a long process into clear sections that are easy to scan.
+
+A Useful Prompt Structure
+
+A structured prompt can often follow this pattern:
+
+Role → Task → Context → Requirements → Constraints → Output Format
+
+For example, a prompt can say that the AI should act as a Spotify expert (Role), explain how to create a playlist (Task), assume the reader is a beginner (Context), include naming and adding songs (Requirements), keep the explanation simple (Constraints), and use bullet points (Output Format).
+
+Final Conclusion
+
+Through Session 2, I learned that a good prompt should clearly communicate both the information I need and the way I want that information presented. A vague request can produce a response in an unpredictable format, while a structured prompt gives the AI a clearer target.
+
+The most important lesson from this session is that output instructions are a powerful part of prompt engineering. By specifying bullet points, tables, JSON, headings, word limits, and other constraints, I can make AI responses more organized, consistent, readable, and useful for a particular task.
+
+Submission Checklist
+
+☐ Task 1 – Spotify playlist structured prompt and bullet-point output
+
+☐ Task 2 – Zomato vs Swiggy comparison with Feature, Zomato and Swiggy columns
+
+☐ Task 3 – Five most recent IPL winners with year and team in valid JSON
+
+☐ Task 4 – UPI benefits with exactly three bullets and fewer than 30 words
+
+☐ Task 5 – BookMyShow booking process with clear step headings
+
+☐ Objectives, explanations and learning points included for all tasks
+
+☐ Overall learning and final conclusion included
+
+TOPS Technologies | Prompt Engineering | Session 2 – Structured & Output Prompts
 
 
-Conclusion
-A good prompt should provide enough information for the AI to understand the goal, context, requirements, and expected output.
+Ask for change
+Ctrl I
