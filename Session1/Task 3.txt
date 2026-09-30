@@ -1,0 +1,61 @@
+Task 3 – Restaurant Review Prompt
+Objective
+This task demonstrates how adding more details to a prompt can change the quality of an AI-generated response.
+For this example, I will use a fictional café called "Bean & Bloom Café."
+Part A – Vague Prompt
+Prompt:
+"Write a review for a new cafe called Bean & Bloom Cafe."
+
+AI Output:
+Bean & Bloom Café Review
+Bean & Bloom Café is a nice new café with a pleasant atmosphere and a good selection of food and drinks. The café has a comfortable environment where people can relax, meet friends, or spend some time working.
+The food was tasty, and the drinks were enjoyable. The staff was friendly and the overall service was good.
+The café has a nice ambience and would be a good place to visit with friends or family. Overall, Bean & Bloom Café is worth visiting if you are looking for a comfortable place to enjoy some food and coffee.
+Part B – Detailed Prompt
+Prompt:
+"Write a natural and realistic customer review for a newly opened café called Bean & Bloom Café. The café serves Italian and continental food, including pasta, pizza, sandwiches, burgers, coffee, and desserts. The average price is ₹250–₹500 per person. The café has a modern minimalist interior with warm lighting, indoor plants, wooden furniture, and soft background music. It is suitable for students, couples, friends, and people working on laptops. Mention the quality of the food, taste of the coffee, ambience, cleanliness, staff behaviour, service speed, and value for money. Keep the review between 150 and 180 words. Make it sound like a genuine customer wrote it, not like an advertisement. End with a short overall recommendation."
+
+AI Output:
+Bean & Bloom Café Review
+I recently visited Bean & Bloom Café and had a really pleasant experience. The café has a modern and minimal interior with warm lighting, wooden furniture, indoor plants, and soft background music, which makes it feel comfortable without being too noisy.
+I tried their pasta and a coffee, and both were good. The pasta was fresh and had a nice balance of flavours, while the coffee was smooth and not overly sweet. Their menu also has pizzas, sandwiches, burgers, and desserts, so there are plenty of options to choose from.
+The staff was polite and helpful, and the café was clean and well-maintained. The service was reasonably quick even though there were several customers.
+Prices are around ₹250–₹500 per person, which I found reasonable for the quality and ambience. It also seems like a good place for students or anyone who wants to work on a laptop.
+Overall, Bean & Bloom Café is worth trying if you want good food, coffee, and a relaxed atmosphere.
+
+
+| Feature | Vague Prompt | Detailed Prompt |
+|---|---|---|
+| Café name | ✅ | ✅ |
+| Cuisine | ❌ | ✅ |
+| Price range | ❌ | ✅ |
+| Ambience | Very general | Detailed |
+| Food | General | Specific |
+| Coffee | Not detailed | Detailed |
+| Staff | General | Specific |
+| Service | General | Specific |
+| Cleanliness | ❌ | ✅ |
+| Target customers | ❌ | ✅ |
+| Length | Not specified | 150–180 words |
+| Writing style | General | Natural customer review |
+| Advertising tone | Possible | Specifically avoided |
+
+
+Which output is better?
+The second output is better for this particular task because the prompt gives the AI much more information.
+The first prompt only gives the café's name. Because there is very little context, the AI has to invent generic details.
+The second prompt gives information about:
+- Cuisine
+- Menu
+- Price
+- Interior
+- Target audience
+- Service
+- Food
+- Coffee
+- Cleanliness
+- Writing style
+- Word count
+As a result, the review feels more specific and realistic.
+Main Learning
+This shows that better input generally gives the AI a better-defined target. The quality and relevance of the response depend heavily on the information provided in the prompt.

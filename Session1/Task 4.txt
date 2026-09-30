@@ -1,0 +1,76 @@
+Selected App Feature: Instagram Explore Page
+Why I selected this feature
+I selected the Instagram Explore page because it shows content based on users' interests and activities.
+AI can be used to generate content ideas that are suitable for a specific audience and social-media format.
+Prompt for Instagram Explore Content
+Detailed Prompt:
+"Act as a social media content strategist who creates Instagram content ideas for the Explore page. Generate 5 Instagram Reel ideas for a small digital marketing and video editing business targeting Indian small-business owners aged 20–40.
+For each Reel idea, provide:
+1. A short and attention-grabbing hook for the first 3 seconds.
+2. The main topic of the Reel.
+3. A short 20–30 second script.
+4. Suggested visuals or shots.
+5. On-screen text.
+6. A caption.
+7. 5 relevant hashtags.
+8. A simple call-to-action.
+Keep the ideas practical and easy to create using a smartphone. Avoid clickbait and exaggerated claims. Use simple, natural English that an Indian audience can easily understand. Make each idea different from the others. Format the answer in a table."
+
+| Reel | Topic | Hook | CTA |
+|---|---|---|---|
+| 1 | 3 Social Media Mistakes | "Your business page may be losing customers because of these 3 mistakes." | "Save this Reel for later." |
+| 2 | Better Instagram Reels | "Want better Reels without expensive equipment?" | "Follow for more tips." |
+| 3 | Video Editing Tip | "This simple editing trick can make your videos look cleaner." | "Try this on your next Reel." |
+| 4 | Google Ads Mistake | "Spending money on Google Ads but getting no leads?" | "Save this before your next campaign." |
+| 5 | Content Ideas | "Don't know what to post today? Try these 5 ideas." | "Comment 'IDEAS' for more." |
+
+Three or More "DOs" Used in This Prompt
+The prompt follows several good prompting practices.
+DO 1 – Give a clear role
+I started the prompt with:
+"Act as a social media content strategist..."
+
+This gives the AI a clear role and helps it understand the type of response expected.
+DO 2 – Give specific context
+I specified:
+"targeting Indian small-business owners aged 20–40."
+
+This helps the AI create content for a particular audience instead of generating generic Instagram ideas.
+DO 3 – Clearly explain the required output
+I specifically requested:
+- Hook
+- Topic
+- Script
+- Visuals
+- On-screen text
+- Caption
+- Hashtags
+- CTA
+This prevents the AI from giving only basic topic ideas.
+DO 4 – Specify the format
+I asked:
+"Format the answer in a table."
+
+This makes the output easier to read and compare.
+DO 5 – Set limitations and style
+I included:
+"Use simple, natural English that an Indian audience can easily understand."
+
+I also asked the AI to avoid clickbait and exaggerated claims.
+This gives the AI a clear writing style and quality standard.
+
+Overall Conclusion
+Through this assignment, I learned that prompt engineering is not just about asking a question to an AI tool. It is about giving clear instructions so that the AI understands exactly what we need.
+A good prompt can include:
+1. Role – Who should the AI act as?
+2. Task – What should the AI do?
+3. Context – What information does the AI need?
+4. Requirements – What specific things should be included?
+5. Constraints – What should be avoided or limited?
+6. Output format – How should the final answer be presented?
+7. Audience – Who is the content for?
+8. Tone – How should the response sound?
+The biggest difference I noticed is that vague prompts leave many things for the AI to assume, while well-structured prompts reduce unnecessary assumptions and produce more focused results.
+This is why learning how to write clear prompts is useful when working with AI tools such as ChatGPT and other generative-AI systems. TOPS's current Prompt Engineering curriculum similarly emphasizes prompt basics, prompt patterns, effective use of LLM tools, and hands-on prompt work.
+
+

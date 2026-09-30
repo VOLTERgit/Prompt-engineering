@@ -1,0 +1,39 @@
+Task 1 – Comparing an Unclear Prompt and a Clear Prompt
+Objective
+The purpose of this task is to understand the difference between a vague prompt and a clear, specific prompt.
+A vague prompt does not provide enough information to the AI, so the response may be too general or may not match what the user actually wants.
+A clear prompt gives the AI important information such as:
+- What exactly is required
+- Time period
+- Location
+- Category
+- Number of results
+- Additional information required
+- Format of the answer
+Prompt 1 – Unclear Prompt
+Prompt:
+"Give me a list of trending songs in India."
+
+Example AI Response:
+Here is a general list of songs that may be popular or trending in India:
+1. Aaj Ki Raat
+2. Tauba Tauba
+3. Akhiyaan Gulaab
+4. O Maahi
+5. Sajni
+6. Teri Baaton Mein Aisa Uljha Jiya
+7. Heeriye
+8. Apna Bana Le
+9. Chaleya
+10. Satranga
+Problem with this response:
+The prompt is not very specific.
+For example, it does not tell the AI:
+- Which platform should be considered?
+- What does "trending" mean?
+- Is the user asking for today's songs or this week's songs?
+- Should the songs be Bollywood, Punjabi, English, or all languages?
+- Should artist names be included?
+- How many songs are required?
+- What date range should be considered?
+Because of this, the AI may give a mixture of old and new songs.

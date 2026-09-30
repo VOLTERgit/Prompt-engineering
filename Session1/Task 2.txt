@@ -1,0 +1,63 @@
+Task 2 – Common Prompting Mistakes
+Objective
+People often make mistakes while writing prompts because they assume that the AI already understands their intention.
+Below are three common mistakes and their Don't vs. Do examples.
+Mistake 1 – Being Too Vague
+❌ DON'T
+"Order some good food for me on Zomato."
+
+Problem:
+The AI does not know:
+- What type of food?
+- Vegetarian or non-vegetarian?
+- Budget?
+- How many people?
+- Location?
+- Spicy or non-spicy?
+- Any food preferences?
+The word "good" is also subjective.
+✅ DO
+"Suggest 5 highly rated vegetarian dinner options available on Zomato near my location. My budget is ₹300–₹500 for one person. I prefer Indian food, medium spice, and I want something suitable for dinner. Include the restaurant name, dish name, approximate price, and rating."
+
+Why this is better:
+The second prompt provides clear criteria, so the AI can give more relevant suggestions.
+Mistake 2 – Not Giving Enough Context
+❌ DON'T
+"Book a movie ticket for me on BookMyShow."
+
+Problem:
+The AI does not know:
+- Which movie?
+- Which cinema?
+- Which city?
+- Date?
+- Time?
+- Number of tickets?
+- Seat preference?
+✅ DO
+"Help me find a movie ticket on BookMyShow. I want to watch a Hindi movie in Ahmedabad this Saturday evening. There will be 2 people. Prefer a show between 6 PM and 9 PM, and choose standard or recliner seats if available. Show me the available options with movie name, theatre, show time, and ticket price."
+
+Why this is better:
+The AI now has the important context needed to understand the requirement.
+Mistake 3 – Not Specifying the Output Format
+❌ DON'T
+"Give me some movie recommendations."
+
+Problem:
+The response could be a long paragraph, a list, or just movie names.
+The user has not explained what information they need.
+✅ DO
+"Recommend 5 Hindi movies that I can watch this weekend. Present the answer in a table with these columns: Movie Name, Release Year, Genre, IMDb Rating, Main Actors, and a one-line description. Keep each description under 30 words."
+
+Why this is better:
+The AI knows exactly how the final answer should look.
+Summary of the Three Mistakes
+
+Mistake	                Don't  	                              Do
+Too vague	     | "Order good food."   |	Specify cuisine, budget, location, preferences
+Lack of context	 |"Book a movie ticket."|	Give city, date, time, people and seat preference
+No output format |	"Recommend movies."|	Specify table columns and response length
+
+
+Conclusion
+A good prompt should provide enough information for the AI to understand the goal, context, requirements, and expected output.
