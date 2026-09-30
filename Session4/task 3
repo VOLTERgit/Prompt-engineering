@@ -1,0 +1,47 @@
+Task 3 – Step-by-Step Solution for the Paytm Wallet Problem
+
+Objective
+
+The objective is to create a prompt that asks ChatGPT to solve a simple
+arithmetic problem in a clear sequence. For this assignment, the
+calculation can be shown transparently without requesting hidden
+internal chain-of-thought.
+
+Problem Given
+
+You have ₹2000 in your Paytm wallet. You want to buy 3 items costing
+₹499, ₹799, and ₹899. Will you have enough balance? Show the calculation
+step by step.
+
+Prompt Used
+
+Solve the following wallet-balance problem. Give a concise, user-visible
+step-by-step calculation: start with the initial balance, add the three
+item prices to calculate the total cost, then subtract the total cost
+from the initial balance. Clearly state whether the balance is enough
+and show the final amount remaining or the shortage. Do not include
+hidden reasoning or internal chain-of-thought; provide only the useful
+calculation steps and final answer.
+
+AI Response
+
+Step 1: Initial balance = ₹2,000 Step 2: Total cost = ₹499 + ₹799 + ₹899
+= ₹2,197 Step 3: Remaining balance = ₹2,000 − ₹2,197 = −₹197 Conclusion:
+No, the balance is not enough. You are short by ₹197.
+
+Calculation Check
+
+₹2,197 total cost − ₹2,000 available balance = ₹197 shortage.
+
+What This Task Demonstrates
+
+A prompt can request a clear sequence of calculations.
+
+Showing the arithmetic steps makes the answer easy for the user to
+verify.
+
+The final answer should clearly state whether the available balance is
+sufficient.
+
+For AI assistants, it is better to request concise, visible solution
+steps rather than hidden internal chain-of-thought.

@@ -1,0 +1,167 @@
+Task 5 – Refactoring the Zomato Role Prompt for Instagram
+
+Objective
+
+The goal is to take the longer Zomato food-review role prompt from Task
+1 and make it suitable for Instagram. Instagram captions are usually
+shorter, more casual and more direct, so the prompt needs a different
+tone and a strict length constraint.
+
+Refactored Prompt
+
+Act as a casual food reviewer creating Instagram-style captions. Write a
+short, natural caption for a new restaurant in Ahmedabad called “The
+Green Plate”. Mention the food, ambience and overall experience in a
+friendly tone. Avoid formal review language and avoid sounding like an
+advertisement. Keep the response under 20 words.
+
+Sample AI Response
+
+Tasty food, cozy vibes, and a solid new spot in Ahmedabad. The Green
+Plate is worth a visit!
+
+Word count: 17 words, which meets the under-20-word constraint.
+
+How the Prompt Was Refactored
+
+Key Concepts Learned in Session 4
+
+A Practical Prompt Framework
+
+A useful structured prompt can be designed using the following sequence:
+
+Role → Task → Context → Requirements → Constraints → Output Format
+
+Role: Tell the AI what type of assistant or professional it should act
+as.
+
+Task: Clearly state what needs to be done.
+
+Context: Provide the relevant situation, audience or background.
+
+Requirements: List the information or actions that must be included.
+
+Constraints: Define boundaries such as topic, length, tone or forbidden
+content.
+
+Output Format: Tell the AI whether the response should be a review,
+table, bullets, steps, caption, or another format.
+
+Final Conclusion
+
+Session 4 helped me understand that prompt engineering can control not
+only what an AI answers, but also the role it plays, the topics it is
+allowed to discuss, and the way a solution should be presented.
+
+Role prompting is useful when a particular professional perspective or
+tone is needed. System prompting is useful when strict boundaries must
+be established. Step-by-step prompts are useful for calculations and
+planning because they make the useful steps visible and easy to verify.
+Prompt refactoring is useful when the same basic task needs to be
+adapted for a different audience or platform.
+
+The main lesson I learned is that a strong prompt is specific about the
+role, task, context, requirements, constraints and output format. These
+elements make the AI response more predictable and useful.
+
+Submission Checklist
+
+☐ Task 1 – Role prompt for a Zomato food reviewer with a sample
+restaurant review.
+
+☐ Task 2 – System prompt restricting the chatbot to IPL teams and
+scores, plus an out-of-scope Bollywood test.
+
+☐ Task 3 – Paytm wallet problem with a concise step-by-step calculation
+and final result.
+
+☐ Task 4 – One-day Ahmedabad itinerary including food, travel and
+entertainment.
+
+☐ Task 5 – Refactored Zomato reviewer prompt for a casual Instagram
+caption under 20 words.
+
+☐ Objectives, prompts, sample responses and explanations included.
+
+☐ Key concepts, practical prompt framework, final conclusion and
+checklist included.
+
+Student Name | Dhaval
+
+Course | Prompt Engineering
+
+Session | Session 4 – Role, System & Chain-of-Thought
+
+Assignment Type | Practical Prompt Engineering Tasks
+
+Item | Price | Running Total
+
+Item 1 | ₹499 | ₹499
+
+Item 2 | ₹799 | ₹1,298
+
+Item 3 | ₹899 | ₹2,197
+
+Time | Place | Activity | Travel | Food / Break
+
+8:00–9:00 AM | Old Ahmedabad | Start with breakfast and experience the
+old-city atmosphere. | Use an auto/cab for a convenient start. |
+Gujarati breakfast such as fafda-jalebi or khaman.
+
+9:15–11:00 AM | Sabarmati Ashram | Visit the ashram, museum areas and
+learn about its historical significance. | Short cab/auto ride from the
+old-city area. | Keep water with you; take a short break afterward.
+
+11:30 AM–1:00 PM | Adalaj Stepwell | Explore the architecture and take
+photographs. | Cab/auto is practical because it is outside central
+Ahmedabad. | Light snack or coconut water if needed.
+
+1:30–2:30 PM | Lunch | Take a relaxed lunch break. | Choose a restaurant
+on the route back toward the city. | Gujarati thali or another local
+meal.
+
+3:00–5:00 PM | Kankaria Lake | Walk around the lakefront and enjoy the
+surrounding attractions. | Cab/auto or local transport depending on
+starting point. | Tea, snacks or a light refreshment.
+
+5:30–7:00 PM | Riverfront | Enjoy an evening walk and relax by the
+Sabarmati Riverfront. | Cab/auto from Kankaria. | Optional coffee or
+snack.
+
+7:30–9:00 PM | Dinner & Local Food | Finish the day with a relaxed
+dinner. | Choose a nearby restaurant to avoid unnecessary travel. |
+Gujarati dinner or a local Ahmedabad food option.
+
+Original Review Prompt | Refactored Instagram Prompt | Reason
+
+Professional Zomato reviewer | Casual Instagram food reviewer | Matches
+the platform’s casual style.
+
+Long review | Short caption | Instagram captions often need quick,
+readable copy.
+
+Detailed food/service criteria | Food + ambience + overall experience |
+Keeps only the most useful details.
+
+Formal review structure | Friendly, direct tone | Makes the content feel
+more social-media friendly.
+
+No strict word limit | Under 20 words | Creates a clear output
+constraint.
+
+Concept | Meaning
+
+Role Prompt | Tells the AI to behave from a particular role or
+perspective, which influences tone, focus and response style.
+
+System Prompt | Defines high-level rules, boundaries and allowed
+behaviour that the assistant should follow.
+
+Step-by-Step Solution | Breaks a task into visible, useful steps so the
+user can understand and verify the result.
+
+Prompt Refactoring | Improves an existing prompt by changing its
+audience, tone, length, constraints or output format.
+
+Constraints | Specific limits such as word count, topic boundaries,
+required information or output style.

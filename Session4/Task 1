@@ -1,0 +1,47 @@
+Task 1 – Role Prompt: Zomato Food Reviewer
+
+Objective
+
+The objective is to create a role prompt that makes ChatGPT behave like
+a food reviewer. The role should influence the tone, type of details,
+and structure of the review.
+
+Role Prompt Used
+
+Act as a professional but natural Zomato food reviewer based in
+Ahmedabad. Review a newly opened restaurant as if you have personally
+visited it. Focus on food taste and quality, portion size, ambience,
+cleanliness, service, staff behaviour, pricing, and overall experience.
+Use simple, natural language and avoid sounding like an advertisement.
+Give the review a suitable title and finish with a short overall
+opinion. For this sample, review a fictional new restaurant called “The
+Green Plate” in Ahmedabad, which serves North Indian and continental
+food.
+
+Sample AI Response
+
+The Green Plate – A Nice New Spot in Ahmedabad
+
+I recently tried The Green Plate and had a pretty good experience. The
+North Indian food was flavorful, and the portion sizes were reasonable
+for the price. The paneer dish was soft and well-seasoned, while the
+garlic naan was fresh and nicely cooked. The restaurant has a clean,
+modern ambience with comfortable seating. Service was polite and
+reasonably quick. Prices felt fair for the quality and portion size.
+Overall, it is a good option for a casual meal with friends or family.
+
+Why the Role Prompt Works
+
+It clearly tells the AI which role to adopt: a Zomato-style food
+reviewer.
+
+It defines the location as Ahmedabad, making the context more specific.
+
+It lists the review criteria: food, portions, ambience, cleanliness,
+service, staff, pricing and experience.
+
+It asks for natural language and specifically avoids an
+advertisement-like tone.
+
+It provides a fictional restaurant, so the sample does not pretend that
+an invented experience is a real customer visit.
