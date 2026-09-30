@@ -1,0 +1,49 @@
+TASK 3 – Product Description + Verification Prompt
+Objective
+The purpose of this task is to demonstrate that an AI can generate a realistic-looking product description even when some details are not verified.
+The second prompt then asks the AI to identify which information is actually supported by data.
+Part A – Product Description Prompt
+Prompt Used
+"Write a product description for a new wireless earbud product that could be listed on Flipkart. Include the product name, battery life, Bluetooth version, driver size, microphone features, water resistance, charging time, and expected price. Make the description attractive but clearly label any information that is assumed or hypothetical."
+
+Example AI Response
+SonicBeat AirPods X – Wireless Earbuds
+SonicBeat AirPods X is a lightweight wireless earbud designed for everyday music, calls and entertainment.
+- Up to 30 hours of total playback with the charging case.
+- Uses Bluetooth 5.3 for wireless connectivity.
+- Features 10 mm dynamic drivers for balanced audio.
+- Includes dual microphones for clearer calls.
+- Designed with an IPX4 water-resistant rating.
+- The charging case may provide multiple additional charges.
+- Estimated charging time is around 1.5 hours.
+- Expected price: ₹1,999.
+Important: The specifications above are hypothetical examples created for this assignment and should not be treated as verified specifications for a real product.
+Part B – Verification Prompt
+After receiving the product description, I would ask ChatGPT:
+"Is all the information in your previous answer based on real, verified data, or did you make any assumptions? List every product detail you invented or assumed. For each detail, explain whether it was verified, assumed, or hypothetical. Do not present an assumption as a fact."
+
+Example AI Verification Response
+Information	Status	Explanation
+Product name: SonicBeat AirPods X	Hypothetical	Created as an example for this assignment.
+30-hour battery	Assumed	No real product specification was provided.
+Bluetooth 5.3	Assumed	Not verified against an official manufacturer specification.
+10 mm drivers	Assumed	Included as a hypothetical specification.
+Dual microphones	Assumed	No verified product source was provided.
+IPX4 rating	Assumed	Not verified against an official product page.
+1.5-hour charging time	Assumed	No official source was provided.
+₹1,999 price	Hypothetical	The price was created for the example.
+
+
+Main Lesson From Task 3
+This task demonstrates an important difference:
+AI Generation
+The AI can create information that sounds realistic.
+AI Verification
+The AI should identify whether that information is:
+- Verified
+- Assumed
+- Hypothetical
+- Unknown
+A product description can look professional while still containing unsupported information.
+Therefore:
+Realistic does not always mean real.

@@ -1,0 +1,57 @@
+TASK 2 – Restricting the AI to Provided IPL Information
+Objective
+The purpose of this task is to understand how a prompt can prevent an AI from adding information that was not provided.
+The assignment specifically gives the AI this information:
+"Chennai Super Kings won the IPL 2023 final against Gujarat Titans by 5 wickets."
+
+The AI should use only this information.
+Prompt Used
+"Summarize the IPL 2023 final using only the following text: 'Chennai Super Kings won the IPL 2023 final against Gujarat Titans by 5 wickets.' Only use the text provided below. Do not add anything else. Do not add player names, scores, venue, dates, statistics, or other details. If the provided text does not contain a particular fact, do not guess it."
+
+Example AI Response
+"Chennai Super Kings won the IPL 2023 final against Gujarat Titans by 5 wickets."
+
+Is This Response Correct?
+Yes.
+The response uses only the information supplied in the prompt.
+It does not add:
+- Player names
+- Scores
+- Venue
+- Date
+- Individual performances
+- Toss information
+- Other statistics
+Therefore, it follows the instruction correctly.
+Verification
+The official IPL match report confirms that Chennai Super Kings defeated Gujarat Titans by five wickets in the 2023 final. It also contains additional information such as the venue, scores and player performances. IPL
+However, those additional details were not included in the provided text, so the AI should not add them when the prompt explicitly says to use only the supplied text.
+Why This Prompt Reduces Hallucination
+The prompt contains several important restrictions.
+Restriction 1
+"Only use the text provided below."
+
+This limits the information source.
+Restriction 2
+"Do not add anything else."
+
+This prevents unnecessary additions.
+Restriction 3
+"Do not add player names, scores, venue, dates, statistics..."
+
+This makes the boundary even clearer.
+Restriction 4
+"Do not guess."
+
+This is important because AI models may try to complete missing information.
+What I Learned
+A strong prompt can reduce hallucinations by clearly telling the AI:
+Use only the information provided.
+
+This is particularly useful when working with:
+- Company documents
+- Legal documents
+- Reports
+- Customer information
+- Research notes
+- Internal business data

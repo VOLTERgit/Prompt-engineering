@@ -1,0 +1,38 @@
+TASK 4 – Reducing Hallucination in an iPhone Review Prompt
+Original Prompt
+"Write a review of the latest iPhone."
+
+Problem With the Original Prompt
+This prompt is too vague.
+Problem 1 – "Latest"
+The word latest changes over time.
+An AI could use outdated information.
+Problem 2 – No source
+The prompt does not tell the AI where the specifications should come from.
+Problem 3 – No specific model
+There may be multiple current iPhone models.
+Problem 4 – No verification requirement
+The AI could accidentally invent specifications.
+Improved Prompt
+"Write a factual review of the latest iPhone model available in India. Before writing, identify the exact model you are reviewing. Use only information from Apple's official India website (apple.com/in) for specifications such as display, processor, cameras, battery/video playback, storage, connectivity, and available colours. Do not use memory or third-party sources for specifications. If a required specification cannot be found on Apple's official website, write 'Not found on the official Apple source' instead of guessing. Clearly separate verified specifications from general opinion. Include the official Apple source URL for each factual specification."
+
+Why This Prompt Should Reduce Hallucination
+One-line explanation:
+It reduces hallucination by restricting the AI to a specific model and Apple's official website, while requiring it to say when information cannot be verified instead of guessing.
+
+Example of Verified Information
+Apple's official India page for the iPhone 17 lists specifications including a 6.3-inch Super Retina XDR display, A19 chip, camera details, storage options and battery/video-playback information. Apple
+Apple's support page also lists the iPhone 17 among its current models and identifies it as a 2025 model. Apple Support
+This demonstrates why specifying "use only Apple's official website" is stronger than simply asking:
+"Tell me about the latest iPhone."
+
+| Original Prompt | Improved Prompt |
+|---|---|
+| "Write a review of the latest iPhone." | Specifies the exact model must be identified. |
+| No source | Uses Apple's official India website. |
+| No verification | Requires verification. |
+| Can use outdated knowledge | Requires current official source. |
+| May invent missing information | Must say "Not found" instead of guessing. |
+| No citation requirement | Requires source URL for factual claims. |
+
+

@@ -1,0 +1,135 @@
+TASK 5 – BookMyShow Movie Summary With Sources
+Objective
+The goal of this task is to design a prompt that makes an AI summarize a movie while providing a source for every factual claim.
+This is important because a movie summary may contain many factual details:
+- Movie name
+- Release year
+- Language
+- Genre
+- Director
+- Actors
+- Story
+- Runtime
+- Rating
+- Other information
+If the AI gives these facts without sources, it becomes difficult to verify them.
+Prompt Used
+"You are a movie-summary assistant for BookMyShow. Summarize the movie '3 Idiots' in a clear and concise way. Use reliable sources, preferably BookMyShow and official movie/production sources. After every factual statement, provide the source URL that supports that statement. If you cannot find a reliable source for a fact, write 'Source not found' instead of guessing. Clearly separate verified facts from your own short summary. Do not invent cast members, release dates, ratings, plot details, or other information. At the end, list all sources used."
+
+Example AI Response
+Movie: 3 Idiots
+Release: 2009.
+Source: BookMyShow – 3 Idiots on BookMyShow
+Language: Hindi.
+Source: BookMyShow – 3 Idiots on BookMyShow
+Genre: Comedy and Drama.
+Source: BookMyShow – 3 Idiots on BookMyShow
+Director: Rajkumar Hirani.
+Source: BookMyShow / Vinod Chopra Films – 3 Idiots on BookMyShow Vinod Chopra Films – 3 Idiots
+Main cast: Aamir Khan, R. Madhavan, Sharman Joshi, Kareena Kapoor Khan and Boman Irani.
+Source: BookMyShow – 3 Idiots on BookMyShow
+Summary: The film follows three students and their experiences at an engineering institute, including their friendship, college life and struggles with the education system.
+Source: BookMyShow – 3 Idiots on BookMyShow
+Short Summary
+3 Idiots is a Hindi comedy-drama about friendship, college life and the pressures surrounding education. The story follows three students whose experiences shape their personal and professional lives. BookMyShow
+Why This Prompt Is Better
+The prompt includes several hallucination-control techniques.
+1. Source requirement
+"Use reliable sources."
+
+This tells the AI not to rely only on memory.
+2. Citation after each fact
+"After every factual statement, provide the source URL."
+
+This makes individual claims easier to verify.
+3. No guessing
+"If you cannot find a reliable source, write 'Source not found' instead of guessing."
+
+This is one of the most important hallucination-reduction instructions.
+4. No invented information
+"Do not invent cast members, release dates, ratings, plot details..."
+
+This creates a clear boundary.
+5. Source list
+"At the end, list all sources used."
+
+This makes the response easier to audit.
+What I Learned From Session 5
+This session taught me that AI responses should be verified instead of blindly trusted.
+Common Causes of Hallucination
+1. Missing information
+If the prompt doesn't provide enough information, the AI may fill the gap with an assumption.
+2. Ambiguous prompts
+Words such as:
+- Latest
+- Best
+- Trending
+- Popular
+- Top
+- Cheap
+- Famous
+can be unclear unless the prompt defines them.
+3. Outdated information
+AI knowledge may not always represent the current situation.
+4. Fake specificity
+An AI can produce very specific details such as:
+"This restaurant has a 4.8 rating and 2,500 reviews."
+
+The fact that the number looks precise does not mean it is verified.
+
+Hallucination-Reduction Techniques
+| Technique | Example |
+|---|---|
+| Specify the source | "Use only Apple's official website." |
+| Tell AI not to guess | "If unavailable, say 'Not found'." |
+| Provide source text | "Use only the text below." |
+| Ask for citations | "Cite the source after every factual claim." |
+| Define the time | "Use information available as of September 2026." |
+| Define the model/product | "Review iPhone 17, not just 'latest iPhone'." |
+| Separate fact and opinion | "Clearly label opinions separately." |
+| Ask for verification | "Identify which details are verified." |
+
+
+The Most Important Rule
+A very useful rule I learned from this session is:
+When the AI does not know something, it is better for it to say "I couldn't verify this" than to invent an answer.
+
+This is especially important for:
+- Prices
+- Product specifications
+- Medical information
+- Legal information
+- Financial information
+- News
+- Sports scores
+- Restaurant information
+- Business information
+- Current events
+Overall Conclusion
+Session 5 helped me understand that getting an answer from AI is not the same as getting a verified answer.
+AI can sometimes generate information that looks realistic but is not supported by reliable sources. This is called hallucination.
+I learned that hallucinations can be reduced by writing better prompts.
+A good hallucination-resistant prompt should clearly define:
+Source → Scope → Time → Requirements → Verification → Fallback
+For example:
+Source: Use only Apple's official website.
+Scope: Only iPhone specifications.
+Time: Use current information.
+Requirements: Include display, camera, battery and storage.
+Verification: Provide a source for every factual claim.
+Fallback: If information cannot be verified, say "Not found" instead of guessing.
+
+The biggest lesson from this session is:
+A confident AI answer is not automatically a correct answer. Information should be checked against reliable sources, especially when the information is current, specific, or important.
+
+✅ Session 5 Submission Checklist
+- [x] Task 1: Zomato Ahmedabad trending-dish prompt + hallucination/verification analysis
+- [x] Task 2: IPL 2023 prompt restricted to provided text + response verification
+- [x] Task 3: Flipkart wireless-earbud description + follow-up verification prompt
+- [x] Task 4: Improved iPhone review prompt using only official Apple data
+- [x] Task 5: BookMyShow movie-summary prompt with source after factual claims
+- [x] Hallucination examples included
+- [x] Hallucination-reduction techniques explained
+- [x] Final learning summary included
+- [x] Final conclusion included
+Useful source examples: the official IPL report confirms the 2023 final result, while Apple's official India pages provide current iPhone specifications, and BookMyShow provides the movie information used in the Task 5 demonstration.

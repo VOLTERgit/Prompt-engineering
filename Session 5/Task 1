@@ -1,0 +1,58 @@
+TASK 1 – Checking Trending Dishes on Zomato in Ahmedabad
+Objective
+The purpose of this task is to see whether an AI can provide real, verifiable information about trending dishes or whether it invents information.
+The word "trending" is especially important because trends can change quickly.
+Therefore, an AI should not confidently claim that a dish is currently trending unless there is supporting evidence.
+Prompt Used
+"List the top 5 trending dishes on Zomato in Ahmedabad right now. For each dish, provide the dish name, restaurant name, approximate price, rating, and a short reason why you consider it trending. Do not guess. If you cannot verify that a dish is currently trending on Zomato, clearly say that the information could not be verified."
+
+
+Example AI Response
+A possible AI response could look like this:
+| No. | Dish | Restaurant | Price | Verification |
+|---|---|---|---|---|
+| 1 | Biryani | Restaurant A | ₹250 | Not verified |
+| 2 | Pizza | Restaurant B | ₹300 | Not verified |
+| 3 | Masala Dosa | Restaurant C | ₹180 | Not verified |
+| 4 | Gujarati Thali | Restaurant D | ₹250 | Not verified |
+| 5 | Paneer Tikka | Restaurant E | ₹220 | Not verified |
+
+
+Important Observation
+The response above should not automatically be considered correct.
+The fact that an AI gives a restaurant name, price, rating, or "trending" label does not prove that the information is real.
+For example, Zomato currently has an Ahmedabad collection page showing restaurants and cuisines, but that page is a curated "Best of Ahmedabad" collection, not proof of a real-time ranking of the five most-trending dishes. Zomato
+Therefore, a responsible AI response should distinguish between:
+"This dish appears in a Zomato collection."
+
+and:
+"This is currently one of the top five trending dishes on Zomato."
+
+Those are not necessarily the same claim.
+
+Possible Hallucinations to Look For
+While checking the response, I would look for:
+1. Fake restaurants
+The AI might create a restaurant name that sounds realistic but does not exist.
+2. Fake prices
+The AI may give a price without checking the current menu.
+3. Fake ratings
+The AI may say:
+"Rating: 4.8/5"
+
+without having a reliable source.
+4. Unsupported "trending" claims
+The AI might say:
+"This dish is trending because thousands of people are ordering it."
+
+Unless the AI has evidence for that claim, it should not state it as fact.
+5. Outdated information
+Restaurant menus, prices, ratings and availability can change.
+
+
+What I Learned
+This task taught me that an AI response should not automatically be treated as verified information.
+When information is time-sensitive, I should check the original source.
+Verification Rule
+AI-generated information → Check reliable source → Compare information → Accept only supported facts
+
