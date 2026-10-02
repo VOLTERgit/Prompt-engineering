@@ -1,0 +1,120 @@
+Task 5 – How to Book a Movie Ticket on BookMyShow
+Objective
+
+The objective is to create a prompt that generates a process using clear headings for each major step.
+
+This is useful when explaining a process that has multiple stages.
+
+Prompt
+
+Explain how to book a movie ticket using BookMyShow for a beginner who has never used the platform before. Explain the process in the correct order, starting from opening BookMyShow and ending with receiving the booking confirmation. Use clear headings for every major step. Use headings exactly in this style: "Step 1: Search Movie", "Step 2: Select Location", etc. Under each heading, provide 2–4 simple bullet points explaining what the user needs to do. Include important steps such as selecting the movie, location, theatre, date, showtime, seats, applying offers if applicable, selecting a payment method, completing payment, and checking the booking confirmation. Keep the language simple and practical.
+
+Example Output
+Step 1: Open BookMyShow
+Open the BookMyShow website or mobile application.
+Log in to your account if required.
+Step 2: Select Your Location
+Select your city or allow the application to detect your location.
+Make sure the selected location is correct.
+Step 3: Search Movie
+Search for the movie you want to watch.
+Select the movie from the search results.
+Step 4: Select Date
+Choose the date on which you want to watch the movie.
+Check the available dates shown for the selected movie.
+Step 5: Select Theatre and Showtime
+Choose a theatre from the available options.
+Select a suitable showtime.
+Check the language and format of the movie if multiple options are available.
+Step 6: Select Seats
+Choose the seats you want from the available seating layout.
+Check the number of selected seats and total ticket price.
+Step 7: Apply Offers
+Check whether any eligible coupons or offers are available.
+Apply an offer if applicable.
+Step 8: Choose Payment Method
+Select an available payment method.
+Review the final amount before making the payment.
+Step 9: Complete Payment
+Complete the payment using the selected method.
+Wait for the payment confirmation.
+Step 10: Check Booking Confirmation
+After successful payment, check the booking confirmation.
+Save the ticket details or access them through the BookMyShow app/website.
+Check the theatre, movie, date, showtime, and seat numbers before visiting.
+📚 What I Learned From Session 2
+
+This session helped me understand that prompt engineering is also about controlling the output format, not just asking a question.
+
+Different instructions can produce completely different response structures.
+
+1. Bullet Points
+
+I can tell the AI:
+
+"Present the answer in bullet points."
+
+This is useful for instructions, summaries, and lists.
+
+2. Tables
+
+I can tell the AI:
+
+"Present the comparison in a table."
+
+This is useful when comparing multiple products, services, or features.
+
+3. JSON
+
+I can tell the AI:
+
+"Return the answer only as valid JSON."
+
+This is useful when the output needs to be processed by software.
+
+4. Word Limits
+
+I can specify:
+
+"Use no more than 30 words."
+
+This helps when creating short social media content, summaries, or descriptions.
+
+5. Headings
+
+I can specify:
+
+"Use clear headings for each major step."
+
+This makes long processes easier to understand.
+
+⭐ Important Prompt Structure I Learned
+
+A structured prompt can follow this basic pattern:
+
+Role → Task → Context → Requirements → Constraints → Output Format
+
+For example:
+
+Role: Act as a Spotify expert.
+Task: Explain how to create a playlist.
+Context: The user is a beginner.
+Requirements: Include naming, adding songs and customization.
+Constraints: Keep it simple and practical.
+Output Format: Use numbered steps and bullet points.
+
+This gives the AI a clear understanding of what to do and how to present the answer.
+
+Final Conclusion
+
+Through Session 2, I learned that a good prompt should not only explain what information I want, but also explain how I want the AI to present that information.
+
+For example:
+
+Bullet points are useful for simple lists and instructions.
+Tables are useful for comparisons.
+JSON is useful for structured data and applications.
+Word limits help control the length of the response.
+Headings make detailed explanations easier to follow.
+
+The main lesson from this session is that the output format can be controlled through clear instructions in the prompt. The more clearly the required structure is explained, the easier it is for the AI to produce an answer that matches the user's requirements.

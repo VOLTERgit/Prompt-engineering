@@ -1,0 +1,51 @@
+Task 4 – Benefits of UPI Apps
+Objective
+
+The objective is to create a prompt with strict output constraints.
+
+The assignment specifically requires:
+
+Exactly 3 bullet points
+Short bullet points
+Maximum 30 words total
+
+This demonstrates how prompts can control both format and length.
+
+Prompt
+
+Summarize the main benefits of using UPI payment apps such as PhonePe and Paytm. Return exactly three short bullet points. The entire answer must contain no more than 30 words in total. Focus on convenience, speed, and security. Do not include an introduction, conclusion, or any text outside the three bullet points.
+
+Example Output
+Fast: Make instant payments using your phone.
+Convenient: Pay bills and transfer money easily.
+Secure: UPI uses authentication for transactions.
+
+Word count: 18 words.
+
+Why This Prompt Works
+
+This prompt contains several constraints:
+
+1. Number constraint
+
+"Exactly three short bullet points."
+
+This tells the AI the exact number of items required.
+
+2. Word constraint
+
+"No more than 30 words in total."
+
+This prevents the AI from producing a long explanation.
+
+3. Content constraint
+
+"Focus on convenience, speed, and security."
+
+This tells the AI what information should be included.
+
+4. Format constraint
+
+"Do not include an introduction, conclusion, or any text outside the three bullet points."
+
+This keeps the output clean.

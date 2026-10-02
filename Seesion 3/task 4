@@ -1,0 +1,167 @@
+Task 4 – Comparing Zero-Shot, One-Shot and Few-Shot Prompting
+Objective
+
+The final task is to compare the three prompting methods by asking ChatGPT to write a Spotify playlist description for a playlist called:
+
+"Monsoon Vibes"
+
+The same basic task is given three different ways.
+
+A. Zero-Shot Prompt
+Prompt:
+
+"Write a short Spotify playlist description for a playlist called 'Monsoon Vibes'. Keep it relaxing, emotional, and suitable for listening during rainy weather."
+
+Example Output:
+
+"A soothing collection of songs for rainy days, quiet evenings, and moments when you just want to relax and enjoy the monsoon vibes."
+
+Analysis
+
+The result is relevant, but it is fairly general.
+
+The AI understands:
+
+Playlist name
+Mood
+Weather
+Desired feeling
+
+However, no example is provided to show a particular writing style.
+
+B. One-Shot Prompt
+Prompt:
+
+"Write a Spotify playlist description similar in style to this example:
+
+Example:
+'Soft melodies, warm coffee, and quiet evenings — the perfect soundtrack for slowing down and enjoying the little moments.'
+
+Now write a similar description for a playlist called 'Monsoon Vibes'. Make it peaceful, emotional, and suitable for rainy evenings."
+
+Example Output:
+
+"Rainy skies, warm coffee, and soft melodies — the perfect playlist for watching the rain, getting lost in your thoughts, and enjoying peaceful monsoon evenings."
+
+Analysis
+
+The one-shot response follows the example's style more closely.
+
+The example provides a pattern:
+
+Rain/weather + everyday object + emotion + listening situation
+
+The AI then creates a similar structure for the monsoon playlist.
+
+C. Few-Shot Prompt
+Prompt:
+
+"Create a Spotify playlist description by following the style of these examples. Study the tone, sentence structure, imagery, and length. Then create a new description for 'Monsoon Vibes'.
+
+Example 1:
+'Soft melodies, warm coffee, and quiet evenings — the perfect soundtrack for slowing down and enjoying the little moments.'
+
+Example 2:
+'Late-night drives, city lights, and songs that make every moment feel a little more special.'
+
+Example 3:
+'Golden sunsets, peaceful roads, and mellow tunes — music made for escaping the noise and enjoying the journey.'
+
+Now write one description for 'Monsoon Vibes'. Keep the same poetic, short, emotional, and lifestyle-focused style. Do not copy any exact sentence."
+
+Example Output:
+
+"Rainy windows, warm chai, and soft melodies — a peaceful collection of songs for getting lost in your thoughts and enjoying every quiet monsoon moment."
+
+
+Comparison
+| Method    | Examples Provided | Example Result                                     | Main Characteristic                              |
+| --------- | ----------------: | -------------------------------------------------- | ------------------------------------------------ |
+| Zero-Shot |                 0 | "A soothing collection of songs for rainy days..." | Follows direct instructions                      |
+| One-Shot  |                 1 | "Rainy skies, warm coffee, and soft melodies..."   | Learns from one example                          |
+| Few-Shot  |                 3 | "Rainy windows, warm chai, and soft melodies..."   | Learns a stronger pattern from multiple examples |
+
+Which Method Gave the Most Relevant Result?
+
+For this particular task, few-shot prompting produced the most closely controlled result because the prompt provided three examples showing the desired tone, structure, imagery, and approximate length.
+
+The important point is not that few-shot prompting is always better. The best method depends on the task.
+
+Zero-Shot
+
+Works well when:
+
+The task is simple.
+The desired output is easy to explain.
+No special style is required.
+One-Shot
+
+Works well when:
+
+One example is enough to demonstrate the desired pattern.
+A particular style or format is required.
+The user wants the AI to imitate a structure without copying the content.
+Few-Shot
+
+Works well when:
+
+The desired style is more complicated.
+Consistency is important.
+Multiple examples can show different aspects of the expected output.
+The task needs stronger pattern recognition.
+Important Difference Between the Three Methods
+Zero-Shot
+
+Instruction only
+
+"Do this."
+
+One-Shot
+
+Instruction + one example
+
+"Do this like this example."
+
+Few-Shot
+
+Instruction + multiple examples
+
+"Study these examples and do the next one in the same pattern."
+
+What I Learned From Session 3
+
+This session helped me understand that examples can be used as part of a prompt to guide AI output.
+
+Zero-Shot Prompting
+
+I learned that zero-shot prompting does not provide examples. The AI must understand the task directly from the instructions.
+
+One-Shot Prompting
+
+I learned that one example can show the AI the expected writing style, structure, or format.
+
+Few-Shot Prompting
+
+I learned that multiple examples give the AI more information about the pattern that it should follow.
+
+Practical Example
+
+Suppose I want an AI to write product descriptions.
+
+Zero-Shot
+
+"Write a product description for a smartwatch."
+
+The AI decides the style itself.
+
+One-Shot
+
+"Write a smartwatch description like this example: [one example]."
+
+The AI gets one reference.
+
+Few-Shot
+
+"Here are three product descriptions. Study their style and write one for a smartwatch."
+
+The AI gets several references and can identify a more consistent pattern.

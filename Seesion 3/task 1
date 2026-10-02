@@ -1,0 +1,75 @@
+Introduction
+
+In this session, I learned about three important prompting techniques:
+
+1. Zero-Shot Prompting
+
+Zero-shot prompting means asking an AI to perform a task without giving it an example.
+
+Example:
+
+"Write a short description for a smartphone."
+
+The AI has to understand the task based only on the instructions.
+
+2. One-Shot Prompting
+
+One-shot prompting means giving the AI one example of the desired output and then asking it to perform a similar task.
+
+Example:
+
+Example:
+"The dosa was crispy, fresh and flavorful. The chutney was delicious and the service was quick."
+
+Now write a similar review for another dosa restaurant.
+
+The AI uses the provided example as a pattern.
+
+3. Few-Shot Prompting
+
+Few-shot prompting means providing multiple examples before asking the AI to perform a new task.
+
+For example, if I provide three product descriptions, the AI can understand the writing style, structure, length, and tone before creating a fourth description.
+
+Task 1 – Zero-Shot Prompting for the Latest IPL Match
+Objective
+
+The purpose of this task is to use zero-shot prompting.
+
+In this example, I don't provide ChatGPT with any example of how the summary should be written. I simply tell it what I want.
+
+Exact Prompt Used
+
+"Give me a one-line summary of the latest completed IPL match. Mention the teams, the winner, and the result. Keep the answer to exactly one sentence."
+
+Example Response
+
+"Royal Challengers Bengaluru defeated Gujarat Titans by five wickets in the IPL 2026 final to win the title."
+
+The official IPL report states that RCB defeated GT by five wickets in the 2026 final, chasing 156 and reaching 161/5 with 12 balls remaining.
+
+Why Is This Zero-Shot Prompting?
+
+This is a zero-shot prompt because I did not provide any example to ChatGPT.
+
+I only provided:
+
+The task
+The information required
+The length constraint
+
+ChatGPT had to understand the task without seeing a sample answer.
+
+What I Learned
+
+Zero-shot prompting is useful when the task is straightforward and the AI can understand the instructions without needing an example.
+
+It is especially useful for:
+
+Simple summaries
+Basic questions
+Translations
+General explanations
+Simple content generation
+
+However, if I need a very specific writing style, one-shot or few-shot prompting can provide additional guidance.

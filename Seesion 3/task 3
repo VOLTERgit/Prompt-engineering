@@ -1,0 +1,85 @@
+Task 3 – Few-Shot Prompting for Flipkart Product Descriptions
+Objective
+
+The purpose of this task is to use few-shot prompting.
+
+Instead of giving just one example, I provide three examples showing how product descriptions should be written.
+
+The three examples represent different categories:
+
+Mobile
+Headphones
+Shoes
+
+After studying the examples, ChatGPT is asked to create a similar description for a smartwatch.
+
+Few-Shot Prompt
+
+"I want you to write short Flipkart-style product descriptions. Study the three examples below and identify their writing style, structure, tone, level of detail, and approximate length. Then write a new description for a smartwatch using the same style. Do not copy exact sentences from the examples.
+
+Example 1 – Mobile:
+"The smartphone features a vibrant display, smooth performance, and a long-lasting battery. Its sleek design makes it comfortable to hold, while the camera setup is suitable for everyday photos and videos."
+
+Example 2 – Headphones:
+"These wireless headphones offer clear audio, deep bass, and a comfortable fit for everyday listening. The lightweight design makes them easy to wear for longer periods, while the battery provides convenient usage throughout the day."
+
+Example 3 – Shoes:
+"These casual shoes combine a stylish design with everyday comfort. The lightweight construction makes walking easier, while the cushioned sole provides support during regular use. They are suitable for casual outings and daily wear."
+
+Now write a similar product description for a smartwatch. Keep the description concise, informative, and suitable for an e-commerce product listing. Mention display, battery, fitness tracking, design, and everyday usability."
+
+Example AI Output
+Smartwatch Product Description
+
+"This smartwatch features a bright display, reliable battery life, and useful fitness-tracking features for everyday activities. Its lightweight design makes it comfortable to wear throughout the day, while health and activity tracking help users monitor their daily routines. The watch is suitable for workouts, notifications, and regular everyday use."
+
+Analysis of the Few-Shot Examples
+
+The three examples have several common characteristics.
+
+1. Short and concise
+
+The descriptions are not extremely long.
+
+They provide important information without unnecessary details.
+
+2. Product-focused
+
+Each description talks about the main features and benefits of the product.
+
+3. Simple language
+
+The language is easy to understand.
+
+4. Professional tone
+
+The descriptions sound suitable for an online shopping website.
+
+5. Similar structure
+
+Most examples follow this pattern:
+
+Product → Main features → Benefits → Usage
+
+The smartwatch description follows the same general pattern.
+
+Why Few-Shot Prompting Is Useful
+
+Few-shot prompting gives the AI more information about the expected result than zero-shot prompting.
+
+For example, instead of simply saying:
+
+"Write a smartwatch description."
+
+I show ChatGPT three examples.
+
+This helps it understand:
+
+Desired length
+Tone
+Sentence structure
+Amount of detail
+Type of information
+Writing style
+
+Therefore, few-shot prompting is useful when consistency is important.

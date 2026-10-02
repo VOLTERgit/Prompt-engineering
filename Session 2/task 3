@@ -1,0 +1,71 @@
+Task 3 – Last Five IPL Winners in JSON Format
+Objective
+
+The objective of this task is to learn how to ask an AI to provide information in valid JSON format.
+
+JSON is commonly used in:
+
+Websites
+Applications
+APIs
+Databases
+Software development
+Automation
+
+Unlike normal text, JSON follows a specific structure.
+
+Prompt
+
+Give me the five most recent IPL winners, including the season year and winning team name. Use the latest completed IPL season available at the time of answering. Return the answer only as valid JSON. Use an array of objects, and each object must contain exactly two keys: "year" and "team". Do not include Markdown, explanations, comments, or any text outside the JSON.
+
+Example Output
+
+As of the latest completed IPL season in 2026, the five most recent winners are 2026 RCB, 2025 RCB, 2024 KKR, 2023 CSK, and 2022 GT. The 2026 final was won by Royal Challengers Bengaluru against Gujarat Titans.
+
+[
+  {
+    "year": 2026,
+    "team": "Royal Challengers Bengaluru"
+  },
+  {
+    "year": 2025,
+    "team": "Royal Challengers Bengaluru"
+  },
+  {
+    "year": 2024,
+    "team": "Kolkata Knight Riders"
+  },
+  {
+    "year": 2023,
+    "team": "Chennai Super Kings"
+  },
+  {
+    "year": 2022,
+    "team": "Gujarat Titans"
+  }
+]
+
+Why JSON is useful here
+
+Instead of receiving a paragraph such as:
+
+"RCB won in 2026, RCB won in 2025..."
+
+the information is organized into separate objects.
+
+For example:
+
+{
+  "year": 2026,
+  "team": "Royal Challengers Bengaluru"
+}
+
+A computer program can easily read this structure.
+
+What I Learned
+
+The important instruction is:
+
+"Return the answer only as valid JSON."
+
+This prevents ChatGPT from adding unnecessary text before or after the data.
